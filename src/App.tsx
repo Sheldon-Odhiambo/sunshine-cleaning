@@ -124,15 +124,15 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="bg-primary p-2 rounded-lg">
-              <Sparkles className="text-white w-6 h-6" />
-            </div>
-            <div>
-              <span className={`font-display font-bold text-xl block leading-none ${scrolled ? 'text-primary' : 'text-primary'}`}>SUNSHINE</span>
-              <span className="text-[10px] uppercase tracking-widest font-semibold text-accent">Cleaning Enterprise</span>
-            </div>
-          </div>
+       <div className="flex items-center gap-2">
+                <div className="p-1">
+                  <img 
+                    src="/assets/logo.png"
+                    alt="Sunshine Cleaning Logo"
+                    className="h-16 w-auto object-contain" // height = 3rem, width scales automatically
+                  />
+                </div>
+              </div>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
